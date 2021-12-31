@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from '@components/App';
+import PostList from '@pages/PostList';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <PostList></PostList>
   </React.StrictMode>,
   document.getElementById('root')
 );
