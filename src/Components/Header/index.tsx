@@ -8,7 +8,7 @@ const Header = () => {
     return (
       <div className="header">
           <div className="site-name">
-              JY-Love
+            Tu me manques
           </div>
           <div className="site-tab">
                 <div className="tab-name">
