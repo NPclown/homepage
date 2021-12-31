@@ -2,7 +2,7 @@
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es6",
-    "lib" : [
+    "lib": [
       "dom",
       "dom.iterable",
       "es6",
@@ -20,10 +20,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve"
   },
   "include": [
     "src",
     "craco.config.js"
-  ],
+  ]
 }
