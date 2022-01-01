@@ -10,29 +10,6 @@ import Pagination from "@components/Pagination";
 import Article from "@interfaces/article";
 import './index.css';
 
-const dummy:Article[] =[{
-  tag : ["#tag1", "#tag2"],
-  title : "제목이예요1",
-  cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
-  date : "2020-12-12",
-  view : 10,
-  comment : 5
-},{
-  tag : ["#tag3", "#tag4"],
-  title : "제목이예요2",
-  cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
-  date : "2020-12-21",
-  view : 5,
-  comment : 5
-},{
-  tag : ["#tag4", "#tag1"],
-  title : "제목이예요3",
-  cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
-  date : "2020-12-31",
-  view : 10,
-  comment : 511
-}]
-
 //TODO :: 
 const PostList = () => {
   return (
@@ -40,10 +17,10 @@ const PostList = () => {
         <Header></Header>
         <Title></Title>
         <Setting></Setting> 
-        {
-          dummy.map((value:Article, index:number) => {return <ListArticle {...value} key={index}></ListArticle>})
-        }
-        <GalleryArticle></GalleryArticle>
+        <ListArticle></ListArticle>
+        {/* {
+          dummy.map((value:Article, index:number) => {return <GalleryArticle {...value} key={index}></GalleryArticle>})
+        } */}
         <Pagination></Pagination>
         <Footer></Footer>
     </div>

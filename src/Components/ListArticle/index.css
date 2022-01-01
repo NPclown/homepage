@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-.article-header {
+.article-list-header {
     margin-left: 20px;
     margin-top: 20px;
     display: flex;
@@ -22,7 +22,7 @@
     margin-right: 10px;
     padding: 3px;
 }
-.article-body {
+.article-list-body {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -30,7 +30,7 @@
     height: 140px;
     display: flex;
 }
-.article-left {
+.article-list-body-left {
     width: 85%;
     height: 100%;
     margin-right: 20px;
@@ -50,7 +50,7 @@
     text-overflow: ellipsis;
 }
 
-.article-right {
+.article-list-body-right {
     width: 15%;
 }
 
@@ -59,7 +59,7 @@
     height: 100%;
     object-fit: cover;
 }
-.article-footer {
+.article-list-footer {
     margin-left: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -70,7 +70,7 @@
     font-weight: 700;
 }
 
-.article-footer-icon {
+.article-list-footer-icon {
     margin-right: 10px;
 }
 

@@ -1,45 +1,37 @@
 import React from "react";
-import {BsCalendar3, BsEye, BsChatLeftDots} from 'react-icons/bs';
-import ImgTest from "@assets/test.jpg";
+import ListArticleBox from "./ListArticleBox";
 import Article from "@interfaces/article";
 import "./index.css";
 
-//TODO:: 게시글 이동 기능 만들기
+const dummy:Article[] =[{
+    tag : ["#tag1", "#tag2"],
+    title : "제목이예요1",
+    cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
+    date : "2020-12-12",
+    view : 10,
+    comment : 5
+  },{
+    tag : ["#tag3", "#tag4"],
+    title : "제목이예요2",
+    cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
+    date : "2020-12-21",
+    view : 5,
+    comment : 5
+  },{
+    tag : ["#tag4", "#tag1"],
+    title : "제목이예요3",
+    cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
+    date : "2020-12-31",
+    view : 10,
+    comment : 511
+  }]
 
-const ListArticle = (props:Article, key:number) => {
+const ListArticle = () => {
     return (
-      <div className="article-list-box" key={key}>
-        <div className="article-header">
-          { props.tag.map((value:string, index:number) => <div className="article-tag" key={index}>{value}</div> )}
-        </div>
-        <div className="article-body">
-          <div className="article-left">
-            <div className="article-title">
-              {props.title}
-            </div>
-            <div className="article-cont">
-              {props.cont}
-            </div>
-          </div>
-          <div className="article-right">
-            <img className="article-img" src={ImgTest}></img>
-          </div>
-        </div>
-
-        <div className="article-footer">
-          <div className="article-date">
-            <BsCalendar3 className="article-footer-icon" size="20"></BsCalendar3>
-            {props.date}
-          </div>
-          <div className="article-view">
-            <BsEye className="article-footer-icon" size="20"></BsEye>
-            {props.view}
-          </div>
-          <div className="article-comment">
-            <BsChatLeftDots className="article-footer-icon" size="20"></BsChatLeftDots>
-            {props.comment}
-          </div>
-        </div>
+      <div className="article-list">
+        {
+          dummy.map((value:Article, index:number) => {return <ListArticleBox {...value} key={index}></ListArticleBox>})
+        }
       </div>
     );
   }
