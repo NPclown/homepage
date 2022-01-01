@@ -4,6 +4,10 @@
     margin-bottom: 20px;
 }
 
+.article-list-box:hover {
+    cursor: pointer;
+}
+
 .article-header {
     margin-left: 20px;
     margin-top: 20px;

@@ -1,39 +1,24 @@
 import React from "react";
 import {BsCalendar3, BsEye, BsChatLeftDots} from 'react-icons/bs';
-import ImgTest from "../../Assets/test.jpg";
+import ImgTest from "@assets/test.jpg";
+import Article from "@interfaces/article";
 import "./index.css";
 
-interface article {
-  tag : string[],
-  title : string,
-  cont : string,
-  date : string,
-  view : number,
-  comment : number
-};
+//TODO:: 게시글 이동 기능 만들기
 
-const dummy:article = {
-  tag : ["#tag1", "#tag2"],
-  title : "제목이예요",
-  cont : "내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.",
-  date : "2020-12-12",
-  view : 10,
-  comment : 5
-}
-
-const ListArticle = () => {
+const ListArticle = (props:Article, key:number) => {
     return (
-      <div className="article-list-box">
+      <div className="article-list-box" key={key}>
         <div className="article-header">
-          { dummy.tag.map((value:string, index:number) => <div className="article-tag" key={index}>{value}</div> )}
+          { props.tag.map((value:string, index:number) => <div className="article-tag" key={index}>{value}</div> )}
         </div>
         <div className="article-body">
           <div className="article-left">
             <div className="article-title">
-              {dummy.title}
+              {props.title}
             </div>
             <div className="article-cont">
-              {dummy.cont}
+              {props.cont}
             </div>
           </div>
           <div className="article-right">
@@ -44,15 +29,15 @@ const ListArticle = () => {
         <div className="article-footer">
           <div className="article-date">
             <BsCalendar3 className="article-footer-icon" size="20"></BsCalendar3>
-            {dummy.date}
+            {props.date}
           </div>
           <div className="article-view">
             <BsEye className="article-footer-icon" size="20"></BsEye>
-            {dummy.view}
+            {props.view}
           </div>
           <div className="article-comment">
             <BsChatLeftDots className="article-footer-icon" size="20"></BsChatLeftDots>
-            {dummy.comment}
+            {props.comment}
           </div>
         </div>
       </div>
