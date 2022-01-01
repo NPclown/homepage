@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routing from './Routes'
 import './index.css';
-import PostList from '@pages/PostList';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  <PostList></PostList>
+    <Routing></Routing>
   </React.StrictMode>,
   document.getElementById('root')
 );
