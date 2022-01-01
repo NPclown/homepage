@@ -4,6 +4,7 @@
       "paths": {
         "@src/*": ["src/*"],
         "@assets/*": ["src/Assets/*"],
+        "@interfaces/*": ["src/Interfaces/*"],
         "@components/*": ["src/Components/*"],
         "@contexts/*": ["src/Contexts/*"],
         "@hooks/*": ["src/Hooks/*"],

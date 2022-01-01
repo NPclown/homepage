@@ -1,0 +1,32 @@
+.title {
+    height: 160px;
+    border: 2px black solid;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.sub {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 1em;
+}
+
+.tag:hover {
+    color: blue;
+    border-bottom: 4px blue solid;
+    cursor: pointer;
+}
