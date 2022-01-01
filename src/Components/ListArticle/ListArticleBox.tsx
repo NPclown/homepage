@@ -9,33 +9,26 @@ import "./index.css";
 const ListArticle = (props:Article, key:number) => {
     return (
       <div className="article-list-box" key={key}>
-        <div className="article-list-header">
-          { props.tag.map((value:string, index:number) => <div className="article-tag" key={index}>{value}</div> )}
+        <div className="article-list-item article-list-tag-list">
+          { props.tag.map((value:string, index:number) => <div className="article-list-tag" key={index}>{value}</div> )}
         </div>
-        <div className="article-list-body">
-          <div className="article-list-body-left">
-            <div className="article-title">
-              {props.title}
-            </div>
-            <div className="article-cont">
-              {props.cont}
-            </div>
+        <div className="article-list-item article-list-title">
+            {props.title}
           </div>
-          <div className="article-list-body-right">
-            <img className="article-img" src={ImgTest}></img>
+        <div className="article-list-item article-list-cont">
+            {props.cont}
           </div>
-        </div>
-
-        <div className="article-list-footer">
-          <div className="article-date">
+        <img className="article-list-item article-list-img" src={ImgTest}></img>
+        <div className="article-list-item article-list-footer">
+          <div className="article-list-date">
             <BsCalendar3 className="article-list-footer-icon" size="20"></BsCalendar3>
             {props.date}
           </div>
-          <div className="article-view">
+          <div className="article-list-view">
             <BsEye className="article-list-footer-icon" size="20"></BsEye>
             {props.view}
           </div>
-          <div className="article-comment">
+          <div className="article-list-comment">
             <BsChatLeftDots className="article-list-footer-icon" size="20"></BsChatLeftDots>
             {props.comment}
           </div>
