@@ -1,0 +1,17 @@
+.footer {
+    height: 40px;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-copyright {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
