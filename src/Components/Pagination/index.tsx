@@ -1,6 +1,4 @@
-import { copyFileSync } from "fs";
 import React from "react";
-import { useState } from "react";
 import "./index.css";
 
 //TODO:: paginatin 방법 변경
