@@ -18,9 +18,7 @@ const PostList = () => {
         <Title></Title>
         <Setting></Setting> 
         <ListArticle></ListArticle>
-        {/* {
-          dummy.map((value:Article, index:number) => {return <GalleryArticle {...value} key={index}></GalleryArticle>})
-        } */}
+        <GalleryArticle></GalleryArticle>
         <Pagination></Pagination>
         <Footer></Footer>
     </div>
