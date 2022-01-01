@@ -13,17 +13,20 @@ import './index.css';
 const PostList = () => {
   const [view, setView] = useState<boolean>(true);
   const [sort, setSort] = useState<number>(1);
+  const [page, setPage] = useState<number>(1);
+  const totalPage:number = 11;
   
   const changeView = (viewType:boolean) => setView(viewType);
   const changeSort = (viewSort:number) => setSort(viewSort);
+  const changePage = (currentPage:number) => setPage(currentPage);
 
   return (
     <div className="container">
         <Title></Title>
         <Setting changeView={changeView} changeSort={changeSort}></Setting> 
-        {console.log({sort:sort})}
+        {console.log({sort:sort, page:page})}
         {view ? <ListArticle></ListArticle> : <GalleryArticle></GalleryArticle>} 
-        <Pagination></Pagination>
+        <Pagination page={page} totalPage={totalPage} changePage={changePage}></Pagination>
     </div>
   );
 }
