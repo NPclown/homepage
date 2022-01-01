@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import { BsSearch, BsPersonCircle } from 'react-icons/bs';
 import "./index.css";
 
@@ -11,12 +12,8 @@ const Header = () => {
             Tu me manques
           </div>
           <div className="site-tab">
-                <div className="tab-name">
-                    Portfolio
-                </div>
-                <div className="tab-name">
-                    Post
-                </div>
+            <Link to='/portfolio' className="tab-name">Portfolio</Link>
+            <Link to='/post' className="tab-name">Post</Link>
           </div>
             <BsSearch className="react-icon" size="40"></BsSearch>
             <BsPersonCircle className="react-icon" size="40"></BsPersonCircle>

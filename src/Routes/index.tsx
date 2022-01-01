@@ -11,6 +11,7 @@ const Routing = () => {
             <Routes>
                 <Route path='/' element={<div>메인 페이지가 존재하지 않습니다.</div>}/>
                 <Route path='/post' element={<PostList/>}/>
+                <Route path='/portfolio' element={<div>해당 페이지가 존재하지 않습니다.</div>}/>
             </Routes>
             <Footer></Footer>
         </Router>
