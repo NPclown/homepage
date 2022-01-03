@@ -1,0 +1,37 @@
+.search-modal {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 180px;
+    width: 1200px;
+    max-width: 1200px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    display: flex;
+}
+
+.search-box {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1130px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.search-react-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -100px;
+}
+
+.search-react-icon:hover {
+    cursor: pointer;
+}
